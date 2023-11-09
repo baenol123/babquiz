@@ -4,67 +4,85 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>김나현 선생님과 함께하는 급식퀴즈</title>
-  <style>
+  <link rel='shortcut icon' type='image/x-icon' href='https://love2dev.com/img/2000px-instagram_logo_2016svg-2000x2000.png' />
+ <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
     body {
-      font-family: 'Nanum Gothic', sans-serif;
-      background-color: #f5f5f5;
+      font-family: 'Roboto', sans-serif;
+      background-image: url("");
+      background-size: cover;
+      padding: 20px;
+      color: #fff;
     }
     h1 {
-      color: #333;
+      color: #ff4081;
       text-align: center;
+      margin-bottom: 10px;
+      margin-top:5px;
+      font-size: 50px
     }
     span {
       cursor: pointer;
-      color: #555;
-      font-size: 1.5em;
+      color: black;
+      font-size: 45px;
+      padding: 10px;
+      border-radius: 5px;
+      transition: all 0.3s ease;
+      background: rgba(0,0,0,0.1);
     }
     span:hover {
-      color: #007BFF;
+      color: #ff4081;
+      background-color: rgba(0,0,0,0.2);
+      transform: scale(1.1);
     }
     div {
       margin-bottom: 20px;
+      text-align: center;
     }
   </style>
   <script>
     function change11() {
-      document.getElementById('11').innerText = "기";
+      document.getElementById('11').innerText = "전";
     }
     function change12() {
-      document.getElementById('12').innerText = "장";
+      document.getElementById('12').innerText = "복";
     }
     function change13() {
-      document.getElementById('13').innerText = "밥";
+      document.getElementById('13').innerText = "새";
     }
     function change14() {
-      document.getElementById('14').innerText = "밥";
+      document.getElementById('14').innerText = "우";
     }
     function change15() {
-      document.getElementById('15').innerText = "주";
+      document.getElementById('15').innerText = "톳";
     }
     function change16() {
-      document.getElementById('16').innerText = "먹";
+      document.getElementById('16').innerText = "필";
     }
     function change17() {
-      document.getElementById('17').innerText = "밥";
+      document.getElementById('17').innerText = "라";
+    }
+     function change18() {
+      document.getElementById('18').innerText = "프";
     }
     
     function change21() {
-      document.getElementById('21').innerText = "표";
+      document.getElementById('21').innerText = "팽";
     }
     function change22() {
-      document.getElementById('22').innerText = "고";
+      document.getElementById('22').innerText = "이";
     }
     function change23() {
-      document.getElementById('23').innerText = "부";
+      document.getElementById('23').innerText = "유";
     }
     function change24() {
-      document.getElementById('24').innerText = "추";
+      document.getElementById('24').innerText = "부";
     }
     function change25() {
-      document.getElementById('25').innerText = "달";
+      document.getElementById('25').innerText = "장";
     }
     function change26() {
-      document.getElementById('26').innerText = "걀";
+      document.getElementById('26').innerText = "국";
     }
     function change27() {
       document.getElementById('27').innerText = "국";
@@ -74,22 +92,22 @@
     }
     
     function change31() {
-      document.getElementById('31').innerText = "매";
+      document.getElementById('31').innerText = "표";
     }
     function change32() {
-      document.getElementById('32').innerText = "운";
+      document.getElementById('32').innerText = "교";
     }
     function change33() {
-      document.getElementById('33').innerText = "쭈";
+      document.getElementById('33').innerText = "콩";
     }
     function change34() {
-      document.getElementById('34').innerText = "꾸";
+      document.getElementById('34').innerText = "나";
     }
     function change35() {
-      document.getElementById('35').innerText = "미";
+      document.getElementById('35').innerText = "물";
     }
     function change36() {
-      document.getElementById('36').innerText = "볶";
+      document.getElementById('36').innerText = "찜";
     }
     function change37() {
       document.getElementById('37').innerText = "음";
@@ -97,25 +115,25 @@
     
     
      function change41() {
-      document.getElementById('41').innerText = "두";
+      document.getElementById('41').innerText = "로";
     }
     function change42() {
-      document.getElementById('42').innerText = "부";
+      document.getElementById('42').innerText = "제";
     }
     function change43() {
-      document.getElementById('43').innerText = "커";
+      document.getElementById('43').innerText = "뇨";
     }
     function change44() {
-      document.getElementById('44').innerText = "틀";
+      document.getElementById('44').innerText = "끼";
     }
     function change45() {
-      document.getElementById('45').innerText = "렛/";
+      document.getElementById('45').innerText = "떡";
     }
     function change46() {
-      document.getElementById('46').innerText = "브";
+      document.getElementById('46').innerText = "볶";
     }
     function change47() {
-      document.getElementById('47').innerText = "라";
+      document.getElementById('47').innerText = "이";
     }
     function change48() {
       document.getElementById('48').innerText = "운";
@@ -129,35 +147,35 @@
     
     
      function change51() {
-      document.getElementById('51').innerText = "배";
+      document.getElementById('51').innerText = "찰";
     }
     function change52() {
-      document.getElementById('52').innerText = "추";
+      document.getElementById('52').innerText = "도";
     }
     function change53() {
-      document.getElementById('53').innerText = "김";
+      document.getElementById('53').innerText = "그";
     }
     function change54() {
-      document.getElementById('54').innerText = "치";
+      document.getElementById('54').innerText = "롤";
     }
     function change55() {
       document.getElementById('55').innerText = "(완)";
     }
     
      function change61() {
-      document.getElementById('61').innerText = "꽃";
+      document.getElementById('61').innerText = "배";
     }
     function change62() {
-      document.getElementById('62').innerText = "맛";
+      document.getElementById('62').innerText = "추";
     }
     function change63() {
-      document.getElementById('63').innerText = "살";
+      document.getElementById('63').innerText = "김";
     }
     function change64() {
-      document.getElementById('64').innerText = "샐";
+      document.getElementById('64').innerText = "치";
     }
     function change65() {
-      document.getElementById('65').innerText = "럿";
+      document.getElementById('65').innerText = "(완)";
     }
     function change66() {
       document.getElementById('66').innerText = "갈";
@@ -168,19 +186,19 @@
     
     
      function change71() {
-      document.getElementById('71').innerText = "초";
+      document.getElementById('71').innerText = "씨";
     }
     function change72() {
-      document.getElementById('72').innerText = "코";
+      document.getElementById('72').innerText = "없";
     }
     function change73() {
-      document.getElementById('73').innerText = "우";
+      document.getElementById('73').innerText = "는";
     }
     function change74() {
-      document.getElementById('74').innerText = "유";
+      document.getElementById('74').innerText = "포";
     }
     function change75() {
-      document.getElementById('75').innerText = "리";
+      document.getElementById('75').innerText = "도";
     }
     function change76() {
       document.getElementById('76').innerText = "타";
@@ -191,75 +209,75 @@
   </script>
 </head>
 <body>
+    <h1>김나현 선생님과 함께하는 급식퀴즈</h1>
   <div>
     <h1>
       <div id="1st_menu">
-        <span id="11" onclick="change11()">ㄱ</span>
-        <span id="12" onclick="change12()">ㅈ</span>
-        <span id="13" onclick="change13()">ㅂ</span>
+        <span id="11" onclick="change11()">ㅈ</span>
+        <span id="12" onclick="change12()">ㅂ</span>
+        <span id="13" onclick="change13()">ㅅ</span>
+        <span id="14" onclick="change14()">ㅇ</span>
+        <span id="15" onclick="change15()">ㅌ</span>
+        <span id="16" onclick="change16()">ㅍ</span>
+        <span id="17" onclick="change17()">ㄹ</span>
+        <span id="18" onclick="change18()">ㅍ</span>
 
       </div>
       <div id="2nd_menu">
         <span id="21" onclick="change21()">ㅍ</span>
-        <span id="22" onclick="change22()">ㄱ</span>
-        <span id="23" onclick="change23()">ㅂ</span>
-        <span id="24" onclick="change24()">ㅊ</span>
-        <span id="25" onclick="change25()">ㄷ</span>
+        <span id="22" onclick="change22()">ㅇ</span>
+        <span id="23" onclick="change23()">ㅇ</span>
+        <span id="24" onclick="change24()">ㅂ</span>
+        <span id="25" onclick="change25()">ㅈ</span>
         <span id="26" onclick="change26()">ㄱ</span>
-        <span id="27" onclick="change27()">ㄱ</span>
 
         
       </div>
       
       <div id="3rd_menu">
-        <span id="31" onclick="change31()">ㅁ</span>
-        <span id="32" onclick="change32()">ㅇ</span>
-        <span id="33" onclick="change33()">ㅉ</span>
-        <span id="34" onclick="change34()">ㄲ</span>
+        <span id="31" onclick="change31()">ㅍ</span>
+        <span id="32" onclick="change32()">ㄱ</span>
+        <span id="33" onclick="change33()">ㅋ</span>
+        <span id="34" onclick="change34()">ㄴ</span>
         <span id="35" onclick="change35()">ㅁ</span>
-        <span id="36" onclick="change36()">ㅂ</span>
-        <span id="37" onclick="change37()">ㅇ</span>
+        <span id="36" onclick="change36()">ㅉ</span>
         
 
       </div>
       
       <div id="4th_menu">
-        <span id="41" onclick="change41()">ㄷ</span>
-        <span id="42" onclick="change42()">ㅂ</span>
-        <span id="43" onclick="change43()">ㅋ</span>
-        <span id="44" onclick="change44()">ㅌ</span>
-        <span id="45" onclick="change45()">ㄹ/</span>
+        <span id="41" onclick="change41()">ㄹ</span>
+        <span id="42" onclick="change42()">ㅈ</span>
+        <span id="43" onclick="change43()">ㄴ</span>
+        <span id="44" onclick="change44()">ㄲ</span>
+        <span id="45" onclick="change45()">ㄸ</span>
         <span id="46" onclick="change46()">ㅂ</span>
-        <span id="47" onclick="change47()">ㄹ</span>
-        <span id="48" onclick="change48()">ㅇ</span>
-        <span id="49" onclick="change49()">ㅅ</span>
-        <span id="410" onclick="change410()">ㅅ</span>
+        <span id="47" onclick="change47()">ㅇ</span>
 
 
       </div>
       <div id="5th_menu">
-        <span id="51" onclick="change51()">ㅂ</span>
-        <span id="52" onclick="change52()">ㅊ</span>
+        <span id="51" onclick="change51()">ㅊ</span>
+        <span id="52" onclick="change52()">ㄷ</span>
         <span id="53" onclick="change53()">ㄱ</span>
-        <span id="54" onclick="change54()">ㅊ</span>
-        <span id="55" onclick="change55()">(ㅇ)</span>
+        <span id="54" onclick="change54()">ㄹ</span>
 
       </div>
       <div id="6th_menu">
-        <span id="61" onclick="change61()">ㄲ</span>
-        <span id="62" onclick="change62()">ㅁ</span>
-        <span id="63" onclick="change63()">ㅅ</span>
-        <span id="64" onclick="change64()">ㅅ</span>
-        <span id="65" onclick="change65()">ㄹ</span>
+        <span id="61" onclick="change61()">ㅂ</span>
+        <span id="62" onclick="change62()">ㅊ</span>
+        <span id="63" onclick="change63()">ㄱ</span>
+        <span id="64" onclick="change64()">ㅊ</span>
+        <span id="65" onclick="change65()">(ㅇ)</span>
         
 
       </div>
       <div id="7th_menu">
-        <span id="71" onclick="change71()">ㅊ</span>
-        <span id="72" onclick="change72()">ㅋ</span>
-        <span id="73" onclick="change73()">ㅇ</span>
-        <span id="74" onclick="change74()">ㅇ</span>
-        
+        <span id="71" onclick="change71()">ㅆ</span>
+        <span id="72" onclick="change72()">ㅇ</span>
+        <span id="73" onclick="change73()">ㄴ</span>
+        <span id="74" onclick="change74()">ㅍ</span>
+        <span id="75" onclick="change74()">ㄷ</span>
       </div>
     </h1>
   </div>
