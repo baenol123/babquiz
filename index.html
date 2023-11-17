@@ -73,6 +73,8 @@
       border-radius: 5px;
       cursor: pointer;
     }
+  
+    
   </style>
  <script>
     function change11() {
@@ -320,18 +322,23 @@
     // 모든 문제가 완료되었는지 확인하는 함수
     function checkCompletion() {
       var allMenus = ["11", "12", "13", "14", "15", "16", "17", "18", "19", "110", "111", "112", "21", "22", "23", "24", "25", "26", "31", "32", "33", "34", "35", "36", "37", "38", "41", "42", "43", "44", "51", "52", "53", "54", "61", "62", "63", "64", "65", "66", "67", "68", "71", "72", "73", "74", "75"];
+      var answers = ["햄", "김", "치", "볶", "음", "밥", "+", "달", "걀", "프", "라", "이", "팽", "이", "유", "부", "장", "국", "도", "라", "지", "진", "미", "무", "침", "(초)", "순", "살", "파", "닭", "깍", "두", "기", "(완)", "고", "구", "마", "소", "보", "로", "피", "자", "오", "렌", "지", "쥬", "스"];
       var completed = true;
       for (var i = 0; i < allMenus.length; i++) {
         var text = document.getElementById(allMenus[i]).innerText;
-        if (text.length <= 1) { // 초성이 아직 완성되지 않았다면
+        if (text !== answers[i]) { // 문제의 답과 일치하지 않는다면
           completed = false;
           break;
         }
       }
       if (completed) { // 모든 문제가 완료되었다면
         document.getElementById('celebration').classList.add('show');
+        document.getElementById('cheerSound').play();
+         
       }
     }
+    
+   
   </script>
 </head>
 <body>
@@ -413,14 +420,16 @@
         <span id="73" onclick="change73()">ㅈ</span>
         <span id="74" onclick="change74()">ㅈ</span>
         <span id="75" onclick="change75()">ㅅ</span>
-        
-        <div class="celebration" id="celebration">
-          <h2>축하합니다! 모든 문제를 완료하셨습니다!</h2>
-          <button onclick="location.reload()">다시하기</button>
-        </div>
-        
       </div>
+      
     </h1>
+    
+    <div class="celebration" id="celebration">
+      <h2>축하합니다! 모든 퀴즈를 완료하셨습니다!</h2>
+      <button onclick="location.reload()">다시하기</button>
+    </div>
+    
   </div>
+  <audio id="cheerSound" src="cheer.mp3" preload="auto"></audio>
 </body>
 </html>
